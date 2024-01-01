@@ -31,3 +31,4 @@ find . -type f -exec rename "s/Prefab/${name}/g" {} +
 
 rm -rf .github/template.yml
 rm -rf .github/workflows/rename-project.yml
+rm -rf .github/rename-project.sh
