@@ -32,7 +32,7 @@ jobs:
 
       - name: Rename the project
         if: steps.is_template.outputs.is_template == 'true'
-        run: .github/rename_project.sh -a ${{ env.REPOSITORY_OWNER }} -n ${{ env.PROJECT_NAME }} -u ${{ env.REPOSITORY_URLNAME }}
+        run: .github/rename-project.sh -a ${{ env.REPOSITORY_OWNER }} -n ${{ env.PROJECT_NAME }} -u ${{ env.REPOSITORY_URLNAME }}
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
